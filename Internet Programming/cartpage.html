@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Peach Official Website</title>
+	<link rel="icon" href="Picture/peach.png"/>
+	<link rel="stylesheet" type="text/css" href="stylecart.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+</head>
+
+
+<body>
+<div class=navigator>
+	<nav>
+		<div class="navi-bar">
+			<ul>
+				<li class="logo">
+					<a href="Homepage.html">
+						<i class="logo"><img src="Picture/peach.png"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" class="navibar-option">Home</a>
+                </li>
+                <li>
+                    <a href="Aboutpage.html" class="navibar-option">About</a>
+                </li>
+                <li>
+                    <a href="ProductPage.html" class="navibar-option">Products</a>
+                </li>
+                <li>
+                    <a href="cartpage.html" class="navibar-option">Cart</a>
+                </li>
+                <li>
+                    <a href="BillingPage.html" class="navibar-option">Payment</a>
+                </li>
+                <li>
+                    <a href="#" id="search">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+				<a href="#" class="navibar-option">
+				<i class="fa fa-shopping-basket"></i>
+				</a>
+				</li>
+            </ul>
+            <div class="navi-search">
+                <form>
+                    <input type="text" name="search" placeholder="Search Peach.com">
+                </form>
+            </div>
+            <a class="close">
+				<i class="fa fa-times"></i>
+            </a>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function () {
+                $('.navibar-option').addClass('hide-item')
+                $('.navi-search').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function () {
+                $('.navibar-option').removeClass('hide-item')
+                $('.navi-search').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+        })
+    </script>
+
+</div>
+
+	<section>
+			<h1 >Your bag total is RM 6,000.00.</h1>
+			<p>Get free shipping on all orders</p>
+			<p class="check-out"> 
+			<a href="BillingPage.html" span class="check-out" input type="button" value="Check Out" onClick="alert('You will be directed to the Check Out page!')">Check Out</a>
+			
+			</p>
+			</div>
+			</section>
+			<hr>
+			</section>
+			<section class="section">
+			<div class="container">
+			<div class="row">
+			
+				<div class="product-info">
+					<img src='Picture/iphone12black.png' class='full-width' alt="iphone 12">
+				</div>
+				<div class="product-info">
+					<ul class="box">
+						<li><h3 class="product-name">Peachphone 12 Lite 64GB Black</h3></li>
+					</ul>
+				</div>
+				<div class="product-info">
+					<p class="product-quantity">
+					<form action="" method="post">
+					<select name="num">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					</select>
+					</form>
+				</p>
+				</div>
+
+				<div class="product-info">
+					<p class="product-price">RM 2,000.00</p>
+				</div>
+
+				<div class="product-detail">
+					<p class="delivery" ><i class="fa fa-truck"aria-hidden="true">&nbspOrder today,delivers:After 5 days</i></p>
+					<p>Mon 06/04/2021-Free</p>
+					<p>Delivery options for:Semenyih</p>
+				</div>
+
+				<div class="product-remove">
+
+				<p>
+					<i class="fa fa-trash" aria-hidden="true"></i>
+						<span class="remove">Remove</span>
+				</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="product-info">
+					<img src='Picture/iphone12white.png' class='full-width' alt="iphone 12">
+				</div>
+				<div class="product-info">
+					<ul class="box">
+						<li><h3 class="product-name">Peachphone 12 Lite 64GB White</h3></li>
+					</ul>
+				</div>
+				<div class="product-info">
+					<p class="product-quantity">
+					<form action="" method="post">
+					<select name="num">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					</select>
+					</form>
+				</p>
+				</div>
+				<div class="product-info">
+					<p class="product-price">RM 2,000.00</p>
+				</div>
+				
+				<div class="product-detail-white">
+					<p class="delivery-white"><i class="fa fa-truck"aria-hidden="true">&nbspOrder today,delivers:After 5 days</i></p>
+					<p>Mon 06/04/2021-Free</p>
+					<p>Delivery options for:Semenyih</p>
+				</div>
+
+				<div class="product-remove">
+				<p>
+					<i class="fa fa-trash" aria-hidden="true"></i>
+						<span class="remove">Remove</span>
+				</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="product-info">
+					<img src='Picture/iphone12blue.png' class='full-width'>
+				</div>
+				<div class="product-info">
+					<ul class="box">
+						<li><h3 class="product-name">Peachphone 12 Lite 64GB Blue</h3></li>
+					</ul>
+				</div>
+				<div class="product-info">
+					<p class="product-quantity">
+					<form action="" method="post">
+					<select name="num">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					</select>
+					</form>
+				</p>
+				</div>
+
+				<div class="product-info">
+					<p class="product-price">RM 2,000.00</p>
+				</div>
+
+				<div class="product-detail">
+					<p class="delivery" ><i class="fa fa-truck"aria-hidden="true">&nbspOrder today,delivers:After 5 days</i></p>
+					<p>Mon 06/04/2021-Free</p>
+					<p>Delivery options for:Semenyih</p>
+				</div>
+
+				<div class="product-remove">
+				<p>
+					<i class="fa fa-trash" aria-hidden="true"></i>
+						<span class="remove">Remove</span>
+				</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<hr>
+	
+	<p class="sub">Subtotal: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;RM6,000.00</p>
+	<p class="ship">Shipping:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Free</p>
+	<p class="tax">SST:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Free</p>
+	
+	 <hr >
+	 <p>Your total:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;RM6,000.00</p>
+	 <p class="check-out"> 
+			<a href="BillingPage.html" span class="check-out" input type="button" value="Check Out" onClick="alert('You will be directed to the Check Out page!')">Check Out</a>
+			
+			</p>
+		<hr>
+			<footer class="footer">
+				<div class="container"> 
+					<div class="row">
+						<div class="footer-col">
+							<h4>Contact Us</h4>
+							<ul class="box">
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">How to buy</a></li>
+								<li><a href="#">Shipping & Delivery</a></li>
+								<li><a href="#">International Return Policy</a></li>
+								<li><a href="#">Question?</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Peach</h4>
+							<ul class="box">
+								<li><a href="Aboutpage.html">About Us</a></li>
+								<li><a href="#">Corporate Voucher Purchase</a></li>
+								<li><a href="#">Affiliate Program</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Terms & Condition</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Campaign Terms & Condition</a></li>
+								<li><a href="#">Intellectual Property Protection</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Address</h4>
+							<ul class="box">
+								<li>113 Lorong Taman temu,</li></a>
+								<li>Taman Kuala Lumpur,</li></a>
+								<li>54800 Kuala Lumpur.</li></a>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Follow Us</h4>
+							<div class="social-links">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<hr>
+</body>
+</html>

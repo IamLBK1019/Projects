@@ -1,0 +1,368 @@
+<!DOCTYPE html> 
+<html lang="en">
+		<head>
+				<title>Peach Official Website</title>
+				<link rel="icon"  href="Picture/peach.png"/>
+				<link rel="stylesheet" href="homepagestyle.css"/>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		</head>
+		
+		<body>
+		<div class=navigator>
+	<nav>
+		<div class="navibar">
+			<ul>
+				<li>
+					<a href="Homepage.html">
+						<i class="logo"><img src="Picture/peach.png"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" class="navibar-option">Home</a>
+                </li>
+                <li>
+                    <a href="Aboutpage.html" class="navibar-option">About</a>
+                </li>
+                <li>
+                    <a href="ProductPage.html" class="navibar-option" id="selected">Products</a>
+                </li>
+                <li>
+                    <a href="cartpage.html" class="navibar-option">Cart</a>
+                </li>
+                <li>
+                    <a href="BillingPage.html" class="navibar-option">Payment</a>
+                </li>
+                <li>
+                    <a href="#" id="search">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navibar-option">
+                        <i class="fa fa-shopping-basket"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="navi-search">
+                <form>
+                    <input type="text" name="search" placeholder="Search Peach.com">
+                </form>
+            </div>
+            <a class="close">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </nav>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function () {
+                $('.navibar-option').addClass('hide-item')
+                $('.navi-search').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function () {
+                $('.navibar-option').removeClass('hide-item')
+                $('.navi-search').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+        })
+    </script>
+
+	
+		<!------------Welcome------------>
+		<div class="greeting">
+			<p class ="background">WELCOME TO YOUR FUTURE</p>
+		</div>
+		
+		<br><br>
+		
+		<!------------Carousel------------>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+  
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="p"><p>Peach 12: Your Creative Outlet</p></div>
+					<a href="ProductPage.html">
+					<img src="Picture/creative.jpg" alt="Peach 12" width="100%" height="100%">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<div class="p"><p>Peach 11S: Peak Performance</p></div>
+					<a href="ProductPage.html">
+					<img src="Picture/newfoon.jpg" alt="Peach G" width="100%" height="100%">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<div class="p"><p>Peach S+: Sleek has never been sleeker</p></div>
+					<a href="ProductPage.html">
+					<img src="Picture/newpic.jpg" alt="Peach S+" width="100%" height="100%">
+					</a>
+				</div>
+			</div>
+  
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+		</div>
+			
+		<br><br><br>
+			
+			
+		
+	
+	<br><br><br>
+	
+		<div class="new_arrival">
+			<h2 class="title_new">New Arrival</h2>
+
+
+			<div class="container_new">
+
+				<div class="boxnew box1">
+					<h3 class="new-arrival-text">Peach Phone 12(Black)</h3>
+
+					<center><img src="Picture/iphone12black1.png"></center>
+
+					<p>64 GB storage</p>
+
+					<p>Price: RM 2000</p>
+
+
+				</div>
+
+				<div class="boxnew box2">
+					<h3 class="new-arrival-text">Peach Phone 12(White)</h3>
+
+					<center><img src="Picture/iphone12white.png"></center>
+
+					<p>128 GB storage</p>
+
+					<p>Price: RM 3000</p>
+					
+				</div>
+
+				<div class="boxnew box3">
+
+					<h3 class="new-arrival-text">Peach Phone 12(Blue)</h3>
+
+					<center><img src="Picture/iphone12blue1.png"></center>
+
+					<p>256 GB storage</p>
+
+					<p>Price: RM 3500</p>
+					
+				</div>
+			</div>
+
+
+			<a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i> </a> &nbsp&nbsp&nbsp&nbsp
+			<a href="#">Buy now <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		</div>
+		
+		<!------------Latest Products------------>
+		
+		<h3 class="featured-title">Latest Products</h3>
+		<br><br>
+		<div class="newproduct">
+			<div class="featured">
+				<div class="row1">
+					<div class ="products">
+						<a href="ProductPage.html">
+						<img class="12" src ="Picture/iphone12black1.png" width="300" height="450">
+						<h4>Peach 12</h4>
+						<p>RM2000.00</p>
+						</a>
+					</div>
+					<div class ="products">
+						<a href="ProductPage.html">
+						<img class="11s" src ="Picture/mi102.jpeg" width="300" height="450">
+						<h4>Peach 11S</h4>
+						<p>RM1700.00</p>
+						</a>
+					</div>
+					<div class ="products">
+						<a href="ProductPage.html">
+						<img class="11" src ="Picture/11.png" width="240" height="450">
+						<h4>Peach 11</h4>
+						<p>RM1500.00</p>
+						</a>
+					</div>
+					<div class ="products">
+						<a href="ProductPage.html">
+						<img class="ss" src ="Picture/veevo.png" width="300px" height="450">
+						<h4>Peach S+</h4>
+						<p>RM1500.00</p>
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+		
+		
+		<br><br>
+		
+		
+		<!------------Offers------------>
+		<div class=	"newoffers">
+			<div class="featured">
+				<div class="offer-image">
+					<h3 class="offertitle"><b><br>SPECIAL OFFER!</b></h3><br>
+					<img src="Picture/11.png"><br><p class="offertitle">PEACH 11<p><br>
+				</div>
+				<div class="offered">
+					<div class="offer">	
+						<p>Get 10% discount for the Peach 11<br> if you buy online!!<br> Duration: 2 March 2021- 3 April 2021</p>
+					</div>
+					<a href="ProductPage.html">
+					<button class="button1"><h4>BUY NOW!</h4></button>
+					</a>
+				</div>
+			</div>	
+		</div>	
+		
+		<br><br><br>
+		
+		<!------------Reviews------------>
+		<h3 class="customertestimonials">Customer Review</h3>
+		<div class="testimonial">
+		<div class="small-container">
+			<div class="row1">
+			<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+				<p>	 Very very good phone. 10/10 must buy.
+				</p>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<img src="Picture/customer1.jpg">
+				<h3>Yvonne Marcus</h3>
+			</div>
+			<div class="col-3">
+				<i class="fa fa-quote-left"></i>
+				<p>	 Very good phone. 9/10 should buy.
+				</p>
+				<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				</div>
+				<img src="Picture/customer2.jpg">
+				<h3>Theresa Lim</h3>
+			</div>
+							<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+				<p>	 Good phone. 8/10 must buy.
+				</p>
+				<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				</div>
+				<img src="Picture/customer3.jpg">
+				<h3>Susy Jane</h3>
+			</div>
+			</div>
+		</div>
+	</div>
+		
+	
+			<br><br>
+		
+		<!------------Buttons------------>
+		<div class="clickables">
+			<div class="nothing">
+				<h2>Browse our full lineup of products</h2>
+				<a href="ProductPage.html">
+				<button class="button" ><h4><b>Click Here</b></h4></button>
+				</a>
+			</div>
+			<br><br>
+			<div class="nothing" >
+				<h2>Learn more about us</h2>
+				<a href= "Aboutpage.html">
+				<button class="button"><h4><b>Click Here</b></h4></button>
+				</a>
+			</div>
+		</div>
+	
+		<br><br><br><br>
+		
+		<footer class="footer">
+                <hr>
+                <div class="containerfooter"> 
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>
+                            <ul class="box">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">How to buy</a></li>
+                                <li><a href="#">Shipping & Delivery</a></li>
+                                <li><a href="#">International Return Policy</a></li>
+                                <li><a href="#">Question?</a></li>
+                                <li><a href="#contactus">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Peach</h4>
+                            <ul class="box">
+                                <li><a href="Aboutpage.html">About Us</a></li>
+                                <li><a href="#">Corporate Voucher Purchase</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Campaign Terms & Condition</a></li>
+                                <li><a href="#">Intellectual Property Protection</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Address</h4>
+                            <ul class="box">
+                                <li>113 Lorong Taman temu,</li>
+                                <li>Taman Kuala Lumpur,</li>
+                                <li>54800 Kuala Lumpur.</li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </footer>
+		</body>	
+</html>		

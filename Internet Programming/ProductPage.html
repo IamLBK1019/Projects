@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<title>Peach Official Website</title>
+				<link rel="icon"  href="Picture/peach.png"/>
+				<link rel="stylesheet" href="style 2.css"/>
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+				<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+		<script>
+			function togglePopup(){
+			document.getElementById("popup-1").classList.toggle("active");
+			}
+		</script>
+		</head>
+		<body>
+			<header>	
+				<nav>
+		<div class="navibar">
+			<ul>
+				<li>
+					<a href="Homepage.html">
+						<i class="logo"><img src="Picture/peach.png"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" class="navibar-option">Home</a>
+                </li>
+                <li>
+                    <a href="Aboutpage.html" class="navibar-option">About</a>
+                </li>
+                <li>
+                    <a href="#" class="navibar-option" id="selected">Products</a>
+                </li>
+                <li>
+                    <a href="cartpage.html" class="navibar-option">Cart</a>
+                </li>
+                <li>
+                    <a href="BillingPage.html" class="navibar-option">Payment</a>
+                </li>
+                <li>
+                    <a href="#" id="search">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navibar-option">
+                        <i class="fa fa-shopping-basket"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="navi-search">
+                <form>
+                    <input type="text" name="search" placeholder="Search Peach.com">
+                </form>
+            </div>
+            <a class="close">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </nav>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function () {
+                $('.navibar-option').addClass('hide-item')
+                $('.navi-search').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function () {
+                $('.navibar-option').removeClass('hide-item')
+                $('.navi-search').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+        })
+    </script>
+			</header>
+			<section class="apple">
+					<p class="heading">Shop Online For Fast,Free delivery,Call us at xxx</p>
+					<br><br>
+					<h1><div><center>Peach 12</center></div></h1>
+					<center><div class="text">Blast Past Fast</div></center>
+						<div class="popup" id="popup-1">
+		<div class="overlay"></div>
+		<div class="content">
+		<div class="close-btn" onclick="togglePopup()">&times;</div>
+		<div class="product-content">
+					<a href ="#" class="product-link">Visit Apple Store</a>
+					<div class="product-rating">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<span>4.7(21)</span>
+					</div>
+					<div class="product-price">
+						<p class="last-price">Old-Price: <span>RM2100</span></p>
+						<p class="new-price">New-Price: <span>RM2000 (5%)</span></p>
+					</div>
+					<div class="product-details">
+						<h2>About this item:</h2>
+						<ul>
+							<li>Display:<span>6.1 inches 1170x2532 pixels</span></li>
+							<li>Camera:<span>12MP(Dual Camera) 12MP Front</span></li>
+							<li>Hardware:<span>Apple A14 Bionic 4GB RAM</span></li>
+							<li>Storage:<span>
+										<select>
+											<option>64GB</option>
+											<option>128GB</option>
+											<option>256GB</option>
+										</select>
+										</span>
+							</li>
+							<li>Battery:<span>2815 mAh</span></li>
+							<li>OS:<span>iOS 14.x</span></li>
+							<li>Color: 
+							<span><select>
+											<option>Black</option>
+											<option>Red</option>
+											<option>Green</option>
+											<option>White</option>
+											<option>Blue</option>
+							</select>
+							</span></li>
+							<li>Available: <span>In Stock</span></li>
+							<li>Category: <span>Smart Phones</span></li>
+							<li>Shipping Area: <span>All over the world</span></li>
+							<li>Shipping Fee: <span>Free</span></li>
+						</ul>
+					</div>
+					<div class="purchase-info">
+						<input type="number min="0" value="1">
+						<button type= "button" class="btn">
+						<a href="cartpage.html">Add to Cart<i class="fa fa-shopping-cart" aria-hidden="true" id="cart"></a></i>
+						</button>
+						<button type="button" class="btn">Compare</button>
+					</div>
+				</div>
+		</div>
+		</div>
+		<button onclick="togglePopup()" class="button2">Buy Now</button>
+			<br><br><br><br><br><br>
+				<div class="appleslider">
+					<figure>
+						<div class="slides"><img src="Picture/Capture6.PNG" height="600px"></div>
+						<div class="slides"><img src="Picture/capture2.PNG" height="600px"></div>
+						<div class="slides"><img src="Picture/Capture3.PNG" height="600px"></div>
+						<div class="slides"><img src="Picture/Capture7.PNG" height="600px"></div>
+						<div class="slides"><img src="Picture/Capture 5.PNG" height="600px"></div>
+					</figure>					
+				</div>
+				<div><center><video src="Videos/iPhone12.mp4" title="iPhone 12" width="100%"  height="500" controls class="embed" alt="film"></center></div>
+					<p class="film"><a href="Videos/iPhone12.mp4" class="applefilm" target="_blank">Watch The Film in Full Screen&nbsp;</a><i class="fa fa-play-circle-o fa-lg" aria-hidden="true"></i></p>
+			</section>		
+			<br><br>
+			<section class="huawei">
+				<h1><div><center>Huawei Mate40 Pro | 5G</center></div></h1>
+				<div class="text">Leap Further Ahead</div>
+				<button class="btn button3">Buy Now</button>
+				<br><br><br>
+			<div class="huaweislider">
+				<figure>
+					<div class="image"><img src="Picture/Huawei.PNG" height="620px"></div>
+					<div class="image"><img src="Picture/huawei3.PNG" height="620px"></div>
+					<div class="image"><img src="Picture/huawei4.PNG" height="620px"></div>
+					<div class="image"><img src="Picture/huawei7.PNG" height="620px"></div>
+					<div class="image"><img src="Picture/huawei8.PNG" height="620px"></div>
+				</figure> 
+			</div>
+				<div><center><video src="Videos/Huawei.mp4"  title="Huawei Mate 40 series" width="100%"  height="500" class="embed" controls alt="film"></center></div>
+				<p class="film"><a href="Videos/Huawei.mp4" class="applefilm" target="_blank">Watch The Film in Full Screen&nbsp;</a><i class="fa fa-play-circle-o fa-lg" aria-hidden="true"></i></p>
+			</section>
+			<section class="huawei">
+					<h1><div><center>Xiaomi Mi 11</center></div></h1>
+					<center><div class="text">Movie Magic</div></center>
+			<button class="btn button3">Buy Now</button>
+			<br><br><br>
+				<div class="appleslider">
+					<figure>
+						<div class="slides"><img src="Picture/xiaomi5.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/xiaomi2.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/xiaomi3.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/xiaomi4.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/xiaomi6.PNG" height="680px"></div>
+					</figure>
+				</div>
+				<div><center><video src="Videos/Xiaomi.mp4"  title="iPhone 12" width="100%"  height="500" controls class="embed" alt="film"></center></div>
+				<p class="film"><a href="Videos/Xiaomi.mp4" class="applefilm" target="_blank">Watch The Film in Full Screen&nbsp;</a><i class="fa fa-play-circle-o fa-lg" aria-hidden="true"></i></p>
+			</section>
+			<section class="huawei">
+					<h1><div><center>Samsung S21 Ultra 5G</center></div></h1>
+					<center><div class="text">Epic In Every Way</div></center>
+				<button class="btn button3">Buy Now</button>
+			<br><br><br>
+				<div class="appleslider">
+					<figure>
+						<div class="slides"><img src="Picture/samsung.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/samsnug2.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/samsung3.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/samsung5.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/samsung8.PNG" height="680px"></div>
+					</figure>
+				</div>
+				<div><center><video src="Videos/Samsung.mp4"  title="iPhone 12" width="100%"  height="500" controls class="embed" alt="film"></center></div>
+				<p class="film"><a href="Videos/Samsung.mp4" class="applefilm" target="_blank">Watch The Film in Full Screen&nbsp;</a><i class="fa fa-play-circle-o fa-lg" aria-hidden="true"></i></p>
+			</section>
+			<section class="huawei">
+					<h1><div><center>Vivo V20 Pro</center></div></h1>
+					<center><div class="text">Be the Focus</div></center>
+				<button class="btn button3">Buy Now</button>
+			<br><br><br>
+				<div class="appleslider">
+					<figure>
+						<div class="slides"><img src="Picture/vivo.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/vivo2.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/vivo3.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/vivo5.PNG" height="680px"></div>
+						<div class="slides"><img src="Picture/vivo4.PNG" height="680px"></div>
+					</figure>
+				</div>
+				<div><center><video src="Videos/Vivo.mp4"  title="Vivo" width="100%"  height="500" controls class="embed" alt="film"></center></div>
+				<p class="film"><a href="Videos/Vivo.mp4" class="applefilm" target="_blank">Watch The Film in Full Screen&nbsp;</a><i class="fa fa-play-circle-o fa-lg" aria-hidden="true"></i></p>
+			</section>
+			<hr class="hr">
+			<footer class="footer">
+				<div class="container"> 
+					<div class="row">
+						<div class="footer-col">
+							<h4>Contact Us</h4>
+							<ul class="box">
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">How to buy</a></li>
+								<li><a href="#">Shipping & Delivery</a></li>
+								<li><a href="#">International Return Policy</a></li>
+								<li><a href="#">Question?</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Peach</h4>
+							<ul class="box">
+								<li><a href="Aboutpage.html">About Us</a></li>
+								<li><a href="#">Corporate Voucher Purchase</a></li>
+								<li><a href="#">Affiliate Program</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Terms & Condition</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Campaign Terms & Condition</a></li>
+								<li><a href="#">Intellectual Property Protection</a></li
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Address</h4>
+							<ul class="box">
+								<li>113 Lorong Taman temu,</li></a>
+								<li>Taman Kuala Lumpur,</li></a>
+								<li>54800 Kuala Lumpur.</li></a>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Follow Us</h4>
+							<div class="social-links">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</body>		
+</html>
+		

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Peach Offical Website</title>
+  <link rel="stylesheet" type="text/css" href="styleabout.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+   crossorigin="anonymous">
+   <link rel="icon"  href="Picture/peach.png">
+</head>
+
+<body class='navi'>
+
+    <nav>
+        <div class="navibar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="logo"><img src="Picture/peach.png"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" class="navibar-option">Home</a>
+                </li>
+                <li>
+                    <a href="Aboutpage.html" class="navibar-option">About</a>
+                </li>
+                <li>
+                    <a href="ProductPage.html" class="navibar-option">Products</a>
+                </li>
+                <li>
+                    <a href="cartpage.html" class="navibar-option">Cart</a>
+                </li>
+                <li>
+                    <a href="BillingPage.html" class="navibar-option">Payment</a>
+                </li>
+                <li>
+                    <a href="#" id="search">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navibar-option">
+                        <i class="fa fa-shopping-basket"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="navi-search">
+                <form>
+                    <input type="text" name="search" placeholder="Search Peach.com">
+                </form>
+            </div>
+            <a class="close">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function () {
+                $('.navibar-option').addClass('hide-item')
+                $('.navi-search').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function () {
+                $('.navibar-option').removeClass('hide-item')
+                $('.navi-search').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+        })
+    </script>
+
+      
+
+    <div class="about-title" id="aboutus">
+
+        <div class="top">
+
+            <h2>About us</h2>
+
+        </div>
+
+        <div class="col-2">
+
+            <center><img src="Picture/store.jpg"></center>
+
+        </div>
+
+    </div>
+
+    <div class="header">
+
+        <div class="word">
+        
+            <h2>Peach store is the leading e-commerce
+            platform<br> and provide the adorable service<br> to the customer.</h2>
+
+            <p>Launched in 2021, providing customers with an easy, secure and <br>fast online shopping experience through strong payment and fulfillment support.<br>
+
+            <p>We believe online shopping should be enjoyable, easy and accessible.<br>This is the vision of the Peach Store aspires to deliver on the platform for the customers.<br>
+             <a href="Homepage.html" class= "btn">Explore now &#8594 </a></p>
+        
+        </div>
+
+    </div>
+
+    
+
+    <div class="ourvalue">
+    	<div class="containervalue">
+    		<h1>Our Value</h1>
+    		<center><img src="Picture/picture.jpg"></center>
+    	</div>
+    	<div class="value">
+    		<div class="value1">
+    		<h2>We Serve </h2>
+    		<ul>
+    			<li>Customers are always right</li>
+    			<li>Exceed customer expectations</li>
+    		</ul>
+    		</div>
+
+    		<div class="value1">
+    		<h2>We adapt </h2>
+    		<ul>
+    			<li>Accept the change and always creative</li>
+    			<li>Make things better and change the world</li>
+    		</ul>
+    		</div>
+
+    		<div class="value1">
+    		<h2>We learn </h2>
+    		<ul>
+    			<li>Be reliable,don't take shortcut</li>
+    			<li>Upload high standards</li>
+    		</ul>
+    		</div>
+
+    		<div class="value1">
+    		<h2>We work </h2>
+    		<ul>
+    			<li>Always have a sense of urgency<br>to get things done</li>
+    			<li>Dont need anyone to push</li>
+    		</ul>
+    		</div>
+
+    		<div class="value1">
+    		<h2>We stay humble </h2>
+    		<ul>
+    			<li>Accept that we are not prefect</li>
+    			<li>Work hard first</li>
+    		</ul>
+    		</div>
+    	</div>
+    </div>
+
+
+<div class="container-sec">
+	<div class="sec">
+        <div class="sec1">
+            
+            <h2>Our Purpose</h2>
+            <p>We want to save the time of our customers and change <br>the world to become better by providing a platform to connect the<br> buyers and sellers within a community. </p>
+
+        </div>
+
+        <div class="sec2">
+
+            <h2>Our Positioning</h2>
+            <p>Peach store offer a one-stop online shopping experience<br>that provides a wide selection of products and fulfiment services <br>for the Internet users around the world.</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="sec3">
+            
+            <h2>Our Personality</h2>
+            <p>We are responsible,simple and easy.These<br> attributes are clearly visible at every step of the Peach Store jorney.
+            </p>
+    </div>
+ 
+</div>
+
+    <div class="wrapper">
+        <h1>Our Team</h1>
+        <span class="border"></span>
+
+
+    <div class="team">
+        <div class="teammember">
+            <div class="team_img">
+                <img src="Picture/Designer1.jpg" alt="team member picture">
+            </div>
+            <h3>Daryus</h3>
+            <p class="role">The Home Page Designer</p>
+            <p>"I am aspires to bring the conveninent and also the good view to the customer."</p>
+
+        </div>
+
+         <div class="teammember">
+            <div class="team_img">
+                <img src="Picture/Designer2.jpg" alt="team member picture">
+            </div>
+    
+            <h3>John</h3>
+            <p class="role">The Product Page Designer</p>
+            <p>"Our store lets the customers to choose the products easily and save their time."</p>
+
+        </div>
+
+        <div class="teammember">
+            <div class="team_img">
+                <img src="Picture/Designer3.jpg" alt="team member picture">
+            </div>
+
+            <h3>Lee Boon Kah</h3>
+            <p class="role">The About Page Designer</p>
+            <p>"I would like to let the customers to know about the background of the Peach Store."</p>
+
+        </div>
+         
+    </div>
+
+    <div class="wrapper2">
+
+    <div class="team">
+        <div class="teammember">
+            <div class="team_img">
+                <img src="Picture/Designer4.jpg" alt="team member picture">
+            </div>
+            <h3>Zhang Cangyue</h3>
+            <p class="role">The Cart Page Designer</p>
+            <p>"Simplify and solve the questions and feedbacks are our duties." </p>
+
+        </div>
+
+         <div class="teammember">
+            <div class="team_img">
+                <img src="Picture/Designer5.jpg" alt="team member picture">
+            </div>
+    
+            <h3>Alvin</h3>
+            <p class="role">The Payment Page Designer</p>
+            <p>"I had designed the best e-commerce website which is the Peach Store."</p>
+
+        </div>
+    </div>
+
+    </div>
+
+</div>
+
+    
+<!-- Contact us sectiom-->
+    <section class="Contact" id="contactus">
+
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>Any question? We will respond and help you to solve the question.<br>Feel free to get in touch with us.</p>
+        </div>
+
+        <div class="container1">
+            <div class="contactInfo">
+                <div class="header1">
+            <h2>Reach Us</h2>
+                 </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>113 Lorong Taman temu 1,Taman Kuala Lumpur,<br>54800 Kuala Lumpur</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>011-47568434</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>Peachstore@temporary-mail.com<br></p>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="Contactform">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Peach Store Username</span>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+
+                     <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Phone number</span>
+                    </div>
+
+                    <div class="inputbox2">
+                        <label>Feedback:</label>
+                        <textarea rows="7"required="required"></textarea>
+                     </div>
+
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>  
+        
+    </section>
+        
+            <footer class="footer">
+                <hr>
+                <div class="containerfooter"> 
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>
+                            <ul class="box">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">How to buy</a></li>
+                                <li><a href="#">Shipping & Delivery</a></li>
+                                <li><a href="#">International Return Policy</a></li>
+                                <li><a href="#">Question?</a></li>
+                                <li><a href="#contactus">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Peach</h4>
+                            <ul class="box">
+                                <li><a href="#aboutus">About Us</a></li>
+                                <li><a href="#">Corporate Voucher Purchase</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Campaign Terms & Condition</a></li>
+                                <li><a href="#">Intellectual Property Protection</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Address</h4>
+                            <ul class="box">
+                                <li>113 Lorong Taman temu,</li>
+                                <li>Taman Kuala Lumpur,</li>
+                                <li>54800 Kuala Lumpur.</li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </footer>
+        
+</body>
+
+</html>

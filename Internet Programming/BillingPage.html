@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <meta charset="UTF-8">
+     <link rel="icon" href="Picture/peach.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Peach Official Website</title>
+	<link rel="stylesheet" type="text/css" href="BillingPageStyle.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	 
+
+	<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;> 
+
+</head>
+
+<body>
+<div class="navigator">
+	<nav>
+		<div class="navi-bar">
+			<ul>
+				<li class="logo">
+					<a href="Homepage.html">
+						<i class="logo"><img src="Picture/peach.png"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="Homepage.html" class="navibar-option">Home</a>
+                </li>
+                <li>
+                    <a href="Aboutpage.html" class="navibar-option">About</a>
+                </li>
+                <li>
+                    <a href="ProductPage.html" class="navibar-option">Products</a>
+                </li>
+                <li>
+                    <a href="cartpage.html" class="navibar-option">Cart</a>
+                </li>
+                <li>
+                    <a href="BillingPage.html" class="navibar-option">Payment</a>
+                </li>
+                <li>
+                    <a href="#" id="search">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navibar-option">
+                        <i class="fa fa-shopping-basket"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="navi-search">
+                <form>
+                    <input type="text" name="search" placeholder="Search Peach.com">
+                </form>
+            </div>
+            <a class="close">
+				<i class="fa fa-times"></i>
+            </a>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#search').click(function () {
+                $('.navibar-option').addClass('hide-item')
+                $('.navi-search').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function () {
+                $('.navibar-option').removeClass('hide-item')
+                $('.navi-search').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+        })
+    </script>
+
+</div>
+
+  <div class='background-color'>
+  <section class="billing">
+  <div class="wrapper">
+        <div class="card">
+            <input type="checkbox" id="card1" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front">
+                    <div class="inner">
+					  <div class='order-info'>
+					        <div class='order-info-content'>
+							<h2>Billing Address</h2>
+							<div class='line'></div>
+					    <table class='order-table'>
+							<tbody>
+							<div class="word-size">
+							<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+							<input type="text" id="fname" name="firstname" size="50" placeholder="Joe eh">
+							</div>
+							</tbody>
+						</table>
+						    <div class='line'></div>
+		
+						<table class='order-table'>
+							<tbody>
+							<div class="word-size">
+							<label for="email"><i class="fa fa-envelope"></i> Email</label>
+							<input type="text" id="email" name="email" placeholder="joe@example.com">
+							</tbody>
+						</table>	
+							
+							<div class='line'></div>
+						<table class='order-table'>
+							<tbody>
+							<div class="word-size">
+							<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+							<input type="text" id="adr" name="address" placeholder="19th Street">
+							</div>
+							</div>
+							</div>
+							</tbody>
+						</table>							
+					</div>
+					</div>
+					<div class='credit-info'>
+					<div class='credit-info-content'>
+							<div class='line'></div>
+						<table class='order-table'>
+							<tbody>
+							<div class="word-size">
+							<label for="city"><i class="fa fa-institution"></i> City</label>
+						</div>	
+							<input type="text" id="city" name="city" placeholder="Malaysia">
+							</tbody>
+					
+						</table>
+				        <div class='line'></div>
+							<table class='order-table'>
+							<tbody>
+								<div class="row">
+								<div class="col-50">
+								<label for="state">State</label>
+								<input type="text" id="state" name="state" placeholder="Selangor">
+								</div>
+								<div class="col-50">
+								<label for="zip">ZipCode</label>
+							<input type="text" id="zip" name="zip" placeholder="10001">
+							</div>
+						</div>
+						</tbody>
+						</table>
+							<label for="card1" class="button return" aria-hidden="true">
+                            Next Page
+                        </label>						
+					</div>		
+                    </div>
+                </div>
+				</div>
+            <div class="back">
+                <div class="inner">
+						 <div class='order-info'>
+					        <div class='order-info-content'>
+							<h2>Order Summary</h2>
+							<div class='line'></div>
+					    <table class='order-table'>
+							<tbody>
+							<tr>
+							<td><img src='Picture/iphone12black.png' class='full-width'alt="PeachPhone Black"></img>
+							</td>
+								<td>
+									<br> <span class='thin'>PeachPhone</span>
+								<br> PeachPhone 12 Lite<br> <span class='thin small'> Color: Black<br><br></span>								
+								</td>
+								
+							</tr>
+					        <tr>
+								<td>
+									<div class='price'>RM2000</div>
+								</td>
+							</tr>		
+							
+							</tbody>
+						</table>
+						    <div class='line'></div>
+
+						<table class='order-table'>
+							<tbody>
+								<tr>
+									<td><img src='Picture/iphone12blue.png' class='full-width'alt="PeachPhone Blue"></img>
+									</td>
+								<td>
+									<br> <span class='thin'>PeachPhone</span>
+									<br>PeachPhone 12 Lite<br> <span class='thin small'> Color: Blue</span>
+								</td>
+								</tr>
+								<tr>
+								<td>
+									<div class='price'>RM2000</div>
+								</td>
+								</tr>
+							</tbody>
+						</table>
+	
+							
+							<div class='line'></div>
+
+							<table class='order-table'>
+							  <tbody>
+								<tr>
+								  <td><img src='Picture/iphone12white.png' class='full-width' alt="PeachPhone White"></img>
+								  </td>
+								  <td>
+									<br> <span class='thin'>PeachPhone</span>
+									<br>PeachPhone 12 Lite<br> <span class='thin small'> Color: Pink, </span>
+								  </td>
+
+								</tr>
+								<tr>
+								  <td>
+									<div class='price'>RM2000</div>
+								  </td>
+								</tr>
+							  </tbody>
+							</table>						
+		        <div class='line'></div>
+						<div class='total'>
+				  <span style='float:left;'>
+					<div class='thin dense'>Shipping</div>
+					<div class='thin dense'>SST</div>
+					TOTAL
+				  </span>
+				  <span style='float:right; text-align:right;'>
+					<div class='thin dense'>FREE</div>
+					<div class='thin dense'>FREE</div>
+					RM6000
+				  </span>
+				</div>
+				<tbody>
+				<tr>
+				</tr>
+				</tbody>
+				
+				<label for="card1" class="return-button" aria-hidden="true">
+                           &#8592; Previous Page
+                        </label>
+					</div>
+                    </div>
+					<div class='credit-info'>
+					<div class='credit-info-content'>
+							<div class='line'></div>
+								<table class='half-input-table'>
+								  <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+									<div class='dropdown-select'>
+									<ul>
+									  <li>Master Card</li>
+									  <li>American Express</li>
+									  </ul></div>
+									</div>
+								   </td></tr>
+								</table>
+						        <img src='Picture/visa_logo.png' height='60' class='credit-card-image' id='credit-card-image'></img>
+								Card Number
+								<input type="number" size="16" id="CardNumber" name="Cardnumber" placeholder="**** **** **** ****">
+								Card Holder
+								<input type="text" id="CardHolderName" name="CardName" placeholder="Aloe Eh">
+							<table class='order-table'>
+							<tbody>
+								<div class="row">
+								<div class="col-50">
+								<label for="ExpiryDate">Expiry Date</label>
+								<input type='number' min="0001" max="9999" id="ExpiryDate" name="ExpiryDate" placeholder="21/21">
+								</div>
+								<div class="col-50">
+								<label for="CVC">CVC</label>
+							<input type="text" id="CVC" size="3" name="CVC" placeholder="100">
+							</div>
+						</div>
+						</tbody>
+						</table>
+								<button class='pay-btn'>Checkout</button>
+					
+						
+					</div>		
+                    </div>
+					
+                </div>
+				
+            </div>
+        </div>
+     </div> 
+</section>	 
+	</div>
+
+<footer class="footer">
+                <hr>
+                <div class="containerfooter"> 
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>
+                            <ul class="box">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">How to buy</a></li>
+                                <li><a href="#">Shipping & Delivery</a></li>
+                                <li><a href="#">International Return Policy</a></li>
+                                <li><a href="#">Question?</a></li>
+                                <li><a href="#contactus">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Peach</h4>
+                            <ul class="box">
+                                <li><a href="Aboutpage.html">About Us</a></li>
+                                <li><a href="#">Corporate Voucher Purchase</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Campaign Terms & Condition</a></li>
+                                <li><a href="#">Intellectual Property Protection</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Address</h4>
+                            <ul class="box">
+                                <li>113 Lorong Taman temu,</li>
+                                <li>Taman Kuala Lumpur,</li>
+                                <li>54800 Kuala Lumpur.</li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </footer>
+
+	 
+   <script>
+var cardDrop = document.getElementById('card-dropdown');
+var activeDropdown;
+cardDrop.addEventListener('click',function(){
+  var node;
+  for (var i = 0; i < this.childNodes.length-1; i++)
+    node = this.childNodes[i];
+    if (node.className === 'dropdown-select') {
+      node.classList.add('visible');
+       activeDropdown = node; 
+    };
+})
+
+window.onclick = function(e) {
+  console.log(e.target.tagName)
+  console.log('dropdown');
+  console.log(activeDropdown)
+  if (e.target.tagName === 'LI' && activeDropdown){
+    if (e.target.innerHTML === 'Master Card') {
+      document.getElementById('credit-card-image').src = 'Picture/MasterCard_Logo.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'Master Card';
+    }
+    else if (e.target.innerHTML === 'American Express') {
+         document.getElementById('credit-card-image').src = 'Picture/amex.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'American Express';      
+    }
+    else if (e.target.innerHTML === 'Visa') {
+         document.getElementById('credit-card-image').src = 'Picture/visa_logo.png';
+          activeDropdown.classList.remove('visible');
+      activeDropdown = null;
+      e.target.innerHTML = document.getElementById('current-card').innerHTML;
+      document.getElementById('current-card').innerHTML = 'Visa';
+    }
+  }
+  else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+    activeDropdown.classList.remove('visible');
+    activeDropdown = null;
+  }
+}
+  window.console = window.console || function(t) {};
+
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+
+
+    </script>       
+</body>
+</html>
