@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.HelpController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SEASHELL" height="250.0" stroke="SEASHELL" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#faf0dd" height="250.0" layoutX="250.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebbb8f" height="250.0" layoutY="250.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+      <Rectangle fx:id="Help_Rectangle" arcHeight="5.0" arcWidth="5.0" fill="#e6d370" height="250.0" layoutX="250.0" layoutY="250.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+      <ImageView fitHeight="100.0" fitWidth="123.0" layoutX="53.0" layoutY="73.0">
+         <image>
+            <Image url="@picture/Instuction_key.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="191.0" prefHeight="48.0" prefWidth="107.0" text="Help">
+         <font>
+            <Font name="Bell MT" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="54.0" text="How to Play ?">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="168.0" prefHeight="65.0" prefWidth="225.0" text="Move the cell left, right, up and down with the respective arrow key" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="48.0" text="Way to Win">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="248.0" text="Game Mode">
+         <font>
+            <Font name="Bell MT" size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Help_Board" layoutX="43.0" layoutY="276.0" onAction="#Get_Help_Board" prefHeight="16.0" prefWidth="157.0" />
+      <ImageView fx:id="Pic_Size_3x3" fitHeight="154.0" fitWidth="171.0" layoutX="35.0" layoutY="320.0" visible="false">
+         <image>
+            <Image url="@picture/Size_3x3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pic_Size_4x4" fitHeight="154.0" fitWidth="171.0" layoutX="40.0" layoutY="320.0">
+         <image>
+            <Image url="@picture/Size_4x4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Pic_Size_5x5" fitHeight="154.0" fitWidth="171.0" layoutX="38.0" layoutY="320.0" visible="false">
+         <image>
+            <Image url="@picture/Size_5x5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="264.0" layoutY="85.0">
+         <image>
+            <Image url="@picture/2048_Win.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="327.0" layoutY="70.0" prefHeight="84.0" prefWidth="164.0" text="Normal Mode:            Obtain the 2048 cell to win" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="Help_ColorPicker" layoutX="309.0" layoutY="285.0" onAction="#Testing_change">
+         <value>
+            <Color red="0.9019607901573181" green="0.8274509906768799" blue="0.43921568989753723" />
+         </value>
+      </ColorPicker>
+      <Label layoutX="292.0" layoutY="253.0" text="Background Color">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="268.0" layoutY="328.0" prefHeight="84.0" prefWidth="215.0" text="The color picker is use to change the background color of menu page, in game page and end game page" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Help_Back_Button" layoutX="9.0" layoutY="6.0" mnemonicParsing="false" onAction="#Help_To_Main" text="&lt; Back">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="260.0" layoutY="426.0" prefHeight="48.0" prefWidth="225.0" text="* Use the color picker to test the color" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Pic_Challenge" fitHeight="154.0" fitWidth="183.0" layoutX="42.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@picture/Challenge_Mode.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="327.0" layoutY="160.0" prefHeight="84.0" prefWidth="171.0" text="Challenge Mode :         Get three 32 cells on the board at the same times within the given moves" wrapText="true">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="268.0" layoutY="178.0">
+         <image>
+            <Image url="@picture/32_Win.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
